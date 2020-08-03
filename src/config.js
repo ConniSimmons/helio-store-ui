@@ -1,4 +1,6 @@
 export default {
+  STRIPE_KEY: "pk_test_51HBWwQB9gpM4m6JhC2DvA6b1ikbkSya9j1QGzhC4piopXkqfMhIgsViu06CrfQuw7dawvsUg8K55pXwGM8sCUKcr00s1M70zrM",
+  MAX_ATTACHMENT_SIZE: 5000000,
     s3: {
       REGION: "us-east-2",
       BUCKET: "helio-app-uploads"
