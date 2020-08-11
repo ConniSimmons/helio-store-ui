@@ -54,7 +54,7 @@ export default function Login() {
             onChange={handleFieldChange}
           />
         </FormGroup>
-        <Link to="/login/reset">Forgot password?</Link>
+        <Link className="forgot" to="/login/reset">Forgot password?</Link>
         <LoaderButton
           block
           type="submit"

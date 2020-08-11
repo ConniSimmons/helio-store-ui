@@ -49,10 +49,6 @@ export default function Notes() {
     return str.replace(/^\w+-/, "");
   }
   
-  function handleFileChange(event) {
-    file.current = event.target.files[0];
-  }
-  
   function saveNote(note) {
     return API.put("notes", `/notes/${id}`, {
       body: note
@@ -142,10 +138,7 @@ export default function Notes() {
               </FormControl.Static>
             </FormGroup>
           )}
-          <FormGroup controlId="file">
-            {!note.attachment && <ControlLabel>Attachment</ControlLabel>}
-            <FormControl onChange={handleFileChange} type="file" />
-          </FormGroup>
+         
           <LoaderButton
             block
             type="submit"

@@ -1,18 +1,26 @@
 // import React, {Component as RC} from 'react';
-// import "./Logo.css";
+// import "./Logo.scss";
 
-// export default function Logo() {
-
-//   function repeatStringNumTimes(string, times) {
-//     var repeatedString = "";
+// export default class Logo extends RC {
+    
+//   repeatStringNumTimes = (string, times) => {
+//     let repeatedString = "";
 //     while (times > 0) {
-//       repeatedString += string;
+//       repeatedString  += string + "\n";
 //       times--;
 //     }
 //     return repeatedString;
 //   }
-  
-//   repeatStringNumTimes("HelioNotes", 188);
-
-
+//   render() {
+//     return (
+//         <body className="Body">
+//             <div className="Div">
+//                 {this.repeatStringNumTimes("HelioNotes", 188)}
+//             </div>
+//         </body>
+//     )
+//   }
 // }
+
+// // - (1..188).each do \i\
+// // %div HelioNotes

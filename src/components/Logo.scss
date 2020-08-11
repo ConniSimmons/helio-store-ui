@@ -1,0 +1,57 @@
+.Logo, .Body {
+    height: 100%;
+    background-color: black;
+  }
+  
+  .Body {
+    height: 100%;
+    position: relative;
+    display: grid;
+    place-items: center;
+  }
+  
+  .Div {
+    position: absolute;
+    font-size: 6vw;
+    color: white;
+    font-family: "Modak", cursive;
+    animation: spin 8s linear infinite, opaqueness 14s linear forwards;
+
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    } 100% {
+      transform: rotate(360deg);
+      animation-fill-mode: forwards;
+    }
+  }
+
+  $base-color: #ffccb7;
+
+@for $i from 1 through 188 {
+  $angle: $i * 2500/100;
+  $this-color: adjust-hue($base-color, $angle);
+
+  div:nth-child(#{$i}n) {
+    animation-delay: (0.05 + $i) * 0.15s;
+    color: $this-color;
+  }
+}
+  
+  @keyframes opaqueness {
+    0% {
+      opacity: 0.3;
+    } 50% {
+      opacity: 0.1;
+    } 100% {
+      opacity: 0.4;
+    }
+  }
+
+  @for $i from 1 through 188 {
+    div:nth-child(#{$i}n) {
+      animation-delay: (0.05 + $i) * 0.15s;
+    }
+  }

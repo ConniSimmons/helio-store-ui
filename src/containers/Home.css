@@ -9,10 +9,11 @@
   .Home .lander h1 {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
+    color: yellow;
   }
   
   .Home .lander p {
-    color: #999;
+    color: rgb(211, 209, 209);
   }
 
   .Home .notes h4 {
@@ -27,9 +28,14 @@
     color: #666;
   }
   .Home .lander div {
+    height: 100%;
     padding-top: 20px;
   }
   .Home .lander div a:first-child {
     margin-right: 20px;
   }
   
+  .Home {
+    background-color: black;
+    padding: 20px;
+  }

@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { useHistory } from "react-router-dom";
-import { FormGroup, FormControl, ControlLabel } from "react-bootstrap";
+import { FormGroup, FormControl } from "react-bootstrap";
 import LoaderButton from "../components/LoaderButton";
 import { onError } from "../libs/errorLib";
 import config from "../config";
@@ -16,10 +16,6 @@ export default function NewNote() {
 
   function validateForm() {
     return content.length > 0;
-  }
-
-  function handleFileChange(event) {
-    file.current = event.target.files[0];
   }
 
   async function handleSubmit(event) {
@@ -64,10 +60,7 @@ export default function NewNote() {
             onChange={e => setContent(e.target.value)}
           />
         </FormGroup>
-        <FormGroup controlId="file">
-          <ControlLabel>Attachment</ControlLabel>
-          <FormControl onChange={handleFileChange} type="file" />
-        </FormGroup>
+       
         <LoaderButton
           block
           type="submit"
