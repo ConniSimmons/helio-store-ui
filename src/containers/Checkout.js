@@ -46,9 +46,9 @@ useEffect(() => {
   return (
     <div className="Settings">
       <h3>Price</h3>
-      <p>&nbsp;&nbsp;1 - 9 Notes: $4 each</p>
-      <p>&nbsp;&nbsp;11 - 100 Notes: $2 each</p>
-      <p>&nbsp;&nbsp;101+ Notes: $1 each</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;1 - 9 Notes: $4 each</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;11 - 100 Notes: $2 each</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;101+ Notes: $1 each</p>
       <hr />
       <StripeProvider stripe={stripe}>
         <Elements>
